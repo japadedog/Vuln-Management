@@ -73,8 +73,8 @@
         <servlet-class>Controlador.SBuscarNombre</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SDescargarExcel</servlet-name>
-        <servlet-class>Controlador.SDescargarExcel</servlet-class>
+        <servlet-name>SDescargarExcel1</servlet-name>
+        <servlet-class>Controlador.SDescargarExcel1</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SBuscarPorUsuario</servlet-name>
@@ -92,6 +92,7 @@
         <servlet-name>SBuscarFechas2</servlet-name>
         <servlet-class>Controlador.SBuscarFechas2</servlet-class>
     </servlet>
+   
     <servlet-mapping>
         <servlet-name>ServletLogin</servlet-name>
         <url-pattern>/Inicio</url-pattern>
@@ -162,8 +163,8 @@
         <url-pattern>/SBuscarNombre</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>SDescargarExcel</servlet-name>
-        <url-pattern>/SDescargarExcel</url-pattern>
+        <servlet-name>SDescargarExcel1</servlet-name>
+        <url-pattern>/SDescargarExcel1</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SBuscarPorUsuario</servlet-name>

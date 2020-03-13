@@ -6,16 +6,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Mostrar Usuarios | Inside Security </title>
+        <title>Usuarios | Inside Security </title>
     </head>
     <body>
-        <h1>Mostrar todos los usuarios registrados</h1>
+        <h1>Todos los Usuarios Registrados</h1>
  
                 <table border="1">
 
             <thead>
                 <tr bgcolor="skyblue">
-                    <th>ID_Uusuario</th>
+                    <th>ID Uusuario</th>
                     <th>NOMBRE</th>
                     <th>PASSWORD</th>
                     <th>TOKEN_CSRF</th>
@@ -56,8 +56,8 @@
                     <th><%=rs.getString(5)%></th>
                     <th><%=rs.getString(6)%></th>
                     <th><%=rs.getString(7)%></th>
-                    <th><a href="Actualizar.jsp?ID_Usuario=<%=rs.getString(1)%>"></a>Editar</th>
-                    <th><a href="eliminar.jsp?ID_Usuario=<%=rs.getString(1)%>"></a>Eliminar</th>
+                    <th><a href="Actualizar.jsp?ID_Usuario=<%=rs.getString(1)%>">Editar</a></th>
+                    <th><a href="eliminar.jsp?ID_Usuario=<%=rs.getString(1)%>">Eliminar</a></th>
                 </tr>                            
                       <%       
                         }

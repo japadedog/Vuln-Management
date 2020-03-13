@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.jsp"> Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="menu.jsp"> Home <span class="sr-only">(current)</span></a>
                 </li>
             <li class="nav-item">
-                    <a class="nav-link" href="#">Panel Usuarios</a>
+                    <a class="nav-link" href="principal.jsp">Panel Usuarios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Panel Vulnerabilidades</a>
+                <a class="nav-link" href="FormularioDocumentacion.jsp">Panel Vulnerabilidades</a>
             </li>
 
         </div>
@@ -37,7 +37,7 @@
 </nav>
    
                   <!--header-->
-                <img src="imagenes/menudeusuarios.jpg">     
+                     
     </head>
     <body>
         <% 
@@ -57,8 +57,8 @@
         <br>
         <br>
 
-        <a href="registrar.jsp"><button type="button" class="btn btn-primary btn-lg btn-block">Registrar Usuario</button></a>
-        <a href="buscar.jsp"><button type="button" class="btn btn-secondary btn-lg btn-block">Buscar Usuario</button></a>
+        <a href="registrar.jsp"><button type="button" class="btn btn-secondary btn-lg btn-block">Registrar Usuario</button></a>
+       <!--a href="buscar.jsp"><button type="button" class="btn btn-secondary btn-lg btn-block">Buscar Usuario</button></a-->
         <a href="mostrarTodos.jsp"><button type="button" class="btn btn-primary btn-lg btn-block">Mostrar Usuario</button></a>
         <a href="BuscarDocumento.jsp"><button type="button" class="btn btn-secondary btn-lg btn-block">Buscar documento</button></a>
         <!--<a href="eliminar.jsp"><button type="button" class="btn btn-primary btn-lg btn-block">Eliminar Usuario</button></a>-->

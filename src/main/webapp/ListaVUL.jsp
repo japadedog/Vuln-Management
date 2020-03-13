@@ -14,26 +14,26 @@
 
             <thead>
                 <tr bgcolor="skyblue">
-                    <th>ID del docuemnto</th>
+                    <th>ID del Docuemnto</th>
                     <th>NOMBRE</th>
-                    <th>path documento</th>
-                    <th>version_documento</th>
+                    <th>Path Documento</th>
+                    <th>Version Documento</th>
                     <th>hash_md5</th>
                     <th>hash_sha1</th>
                     <th>hash_sha256</th>
-                    <th>documento_relacionado</th>
-                    <th>fecha_entrega</th>
-                    <th>nro_sprint </th>
-                    <th>nombre_sprint </th>
-                    <th>estado_documento </th>
-                    <th>alcance	 </th>
-                    <th>conclusion </th>
-                    <th>id_persona </th>
-                    <th>id_idea </th>
-                    <th>id_celula </th>
-                    <th>id_usuario</th>
-                    <th>id_origen </th>
-                    <th>id_revision </th>
+                    <th>Documento Relacionado</th>
+                    <th>Fecha Entrega</th>
+                    <th>Nro Sprint </th>
+                    <th>Nombre Sprint </th>
+                    <th>Estado Documento </th>
+                    <th>Alcance	 </th>
+                    <th>Conclusion </th>
+                    <th>Personal Encargado</th>
+                    <th>Id Del Proyecto </th>
+                    <th>Celula </th>
+                    <th>Usuario</th>
+                    <th>Origen </th>
+                    <th>Revision </th>
                 </tr> 
 
                 <%
@@ -83,7 +83,9 @@
                     <th><%=rs.getString(18)%></th>
                     <th><%=rs.getString(19)%></th>
                     <th><%=rs.getString(20)%></th>
-                    <th><a href="SDescargarExcel?id_documento=<%=rs.getString(1)%>"></a>ELIGIR</th>
+                    <th><a href="Descargar.jsp?id_documento=<%=rs.getString(1)%>">Excel</a></th>
+                    <th><a href="SDescargarExcel1?id_documento=<%=rs.getString(1)%>">Word</a></th>
+                    
                 </tr>        
 
                 <%
@@ -107,29 +109,29 @@
 
             <thead>
                 <tr bgcolor="skyblue">
-                    <th>id_documento</th>
-                    <th>id_vulnerabilidad</th>
-                    <th>nombre_vulnerabilidad</th>
-                    <th>url_servicio</th>
-                    <th>descripcion_vulnerabilidad</th>
-                    <th>impacto_vulnerabilidad</th>
-                    <th>recomendaciones_vulnerabilidad</th>
-                    <th>id_estado_mitigacion</th>
-                    <th>fecha_mitigacion</th>
+                    <th>ID Documento</th>
+                    <th>ID Vulnerabilidad</th>
+                    <th>Nombre de la Vulnerabilidad</th>
+                    <th>URL del Servicio</th>
+                    <th>Descripcion</th>
+                    <th>Impacto Vulnerabilidad</th>
+                    <th>Recomendaciones</th>
+                    <th>Estado de la Mitigacion</th>
+                    <th>Fecha Mitigacion</th>
                     <th>cvss</th>
-                    <th>fecha_propuesta</th>
-                    <th>pasos</th>
-                    <th>path_poc</th>
-                    <th>num_incidente</th>
-                    <th>id_usuario</th>
-                    <th>id_categoria</th>
-                    <th>id_owasp_2017</th>
-                    <th>id_criticidad</th>
-                    <th>id_tratamiento_riesgo</th>
-                    <th>id_cwe</th>
-                    <th>id_aplicacion</th>
-                    <th>id_ambiente</th>
-                    <th>id_empresa</th>
+                    <th>Fecha Propuesta</th>
+                    <th>Pasos</th>
+                    <th>Path</th>
+                    <th>Num Incidente</th>
+                    <th>Usuario</th>
+                    <th>Categoria</th>
+                    <th>OWASP_2017</th>
+                    <th>Criticidad</th>
+                    <th>Tratamiento de Riesgo</th>
+                    <th>CWE</th>
+                    <th>Aplicacion</th>
+                    <th>Ambiente</th>
+                    <th>Empresa</th>
 
 
                 </tr> 

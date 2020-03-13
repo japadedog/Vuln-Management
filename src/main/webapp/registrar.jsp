@@ -37,7 +37,7 @@
             <input type="text" name="NOMBRE" value=""style="background-color: lightblue" />     NOMBRE<br/>
             <input type="text" name="PASSWORD" value="" style="background-color: lightblue" />      PASSWORD<br/>
             <input type="text" name="TOKEN_CSRF" value="" style="background-color: lightblue"/>     TOKEN_CSRF<br/>
-            <input type="text" name="ULTIMA_CONEXION" value="" style="background-color: lightblue"/>     ULTIMA_CONEXION<br/>
+            <input type="text" name="ULTIMA_CONEXION" value="" style="background-color: lightblue"/>     ULTIMA CONEXION<br/>
             <input type="text" name="CORREO" value="" style="background-color: lightblue"/>     CORREO ELECTRONICO<br/>
             <!-- este debe ser combobox -->
             

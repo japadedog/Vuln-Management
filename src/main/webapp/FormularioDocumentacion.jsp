@@ -41,18 +41,18 @@
         
         <form action="SAgregarDocumento" method="POST" style="background-color: lavender">
            
-           <input type="text" name="nombre_documento" value="" />nombre_documento *<br/>                                                                       </lu> 
-            <input type="text" name="path_documento" value="" />path_documento *<br/>
-            <input type="number" name="version_documento" value="" />version_documento *<br/>
+           <input type="text" name="nombre_documento" value="" />Nombre del Documento *<br/>                                                                       </lu> 
+            <input type="text" name="path_documento" value="" />Path del Documento *<br/>
+            <input type="number" name="version_documento" value="" />Version Documento *<br/>
             <input type="text" name="hash_md5" value="" />hash_md5 *<br/>
             <input type="text" name="hash_sha1" value="" />hash_sha1 *<br/>
             <input type="text" name="hash_sha256" value="" />hash_sha256 *<br/>
-            <input type="text" name="documento_relacionado" value="" />documento_relacionado <br/>
-            <input type="text" name="fecha_entrega" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Enter a date in this format YYYY-MM-DD">fecha_entrega* (yyyy-mm-dd)<br>
-            <input type="number" name="nro_sprint" value="" />nro_sprint <br/>
-            <input type="text" name="nombre_sprint" value="" />nombre_sprint <br/>
-            <input type="text" name="estado_documento" value="false" readonly="readonly"/>estado_documento * <br/>
-            <input type="text" name="alcance" value="" />alcance * <br/>
+            <input type="text" name="documento_relacionado" value="" />Documentación Relacionado <br/>
+            <input type="text" name="fecha_entrega" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Enter a date in this format YYYY-MM-DD">Fecha Entrega* (yyyy-mm-dd)<br>
+            <input type="number" name="nro_sprint" value="" />Nro del Sprint <br/>
+            <input type="text" name="nombre_sprint" value="" />Nombre del Sprint <br/>
+            <input type="text" name="estado_documento" value="false" readonly="readonly"/>Estado Documento* <br/>
+            <input type="text" name="alcance" value="" />Alcance* <br/>
           
   
             <script language="javascript" type="text/javascript">
@@ -63,12 +63,12 @@
             </script>
            
                <textarea  name="conclusion" class="siva"></textarea>
-               <a href="javascript:getData()"></a>conclusion*
+               <a href="javascript:getData()"></a>Conclusion*
                <br>
             
             
             <!-- cajitas combobox -->
-            
+            Persona Encargada :   
             <jsp:useBean id="id_persona" scope="page" class="Dao.DocumentoDao"/>
             <% ResultSet rt = id_persona.consultarListaPersona(); %>
             <select name="id_persona">
@@ -88,12 +88,12 @@
             </select>
                     
                     <br>
-                    
+            Seleccione el Proyecto:     
             <jsp:useBean id="id_idea" scope="page" class="Dao.DocumentoDao" />
             <% ResultSet rp = id_idea.consultarListaProyecto(); %>
             <select name="id_idea">
                 <option>
-                    Seleccione el protecto </option> 
+                    Seleccione el proyecto </option> 
 
                     <%
                     while(rp.next()){
@@ -108,7 +108,7 @@
             </select>
             
             <br>
-                    
+             Seleccione la Celula:       
             <jsp:useBean id="id_celula" scope="page" class="Dao.DocumentoDao" />
             <% ResultSet rc = id_celula.consultarListaCelula(); %>
             <select name="id_celula">
@@ -124,9 +124,10 @@
                     <%
                       }
                     %>
-                                
+                               
             </select>
-            <br>            
+            <br>
+            Seleccione el Origen:             
             <jsp:useBean id="id_origen" scope="page" class="Dao.DocumentoDao" />
             <% ResultSet ro = id_origen.consultarListaOrigen(); %>
             <select name="id_origen">
@@ -146,7 +147,7 @@
             </select>
                     
                     <br>
-            
+            Seleccione la Revision:
             <jsp:useBean id="id_revision" scope="page" class="Dao.DocumentoDao" />
             <% ResultSet rr = id_revision.consultarListaRevision(); %>
             <select name="id_revision">
@@ -175,6 +176,7 @@
     
                     <!-- boton -->
                     <br>
+                   
             <center><a href="menu.jsp"><button type="button" class="btn btn-secondary">Volver..</button></a></center>
         <br>
         

@@ -94,7 +94,7 @@
                     <th><%=rs.getString(20)%></th>
                     <th><%=rs.getString(21)%></th>
                     <th><%=rs.getString(22)%></th>
-                    <th><a href="FormularioVul.jsp?id_vulnerabilidad=<%=rs.getString(1)%>"></a>ELIGIR</th>
+                    <th><a href="FormularioVul.jsp?id_vulnerabilidad=<%=rs.getString(1)%>">ELIGIR</a></th>
                     
                 </tr>        
 

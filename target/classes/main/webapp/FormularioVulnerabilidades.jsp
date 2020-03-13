@@ -31,7 +31,7 @@
         <!-- BOOTSTRAP-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!--header-->
-    <img src="imagenes/actualizarusuarios.jpg">         
+    <img src="imagenes/formulariovulnerabilidades.jpg">         
 
     <title>Formulario Vulnerabilidades | Inside Security</title>
 </head>
@@ -47,15 +47,15 @@
     %>
 <center><h1>Formulario Vulnerabilidades </h1></center>
 <br>
-<a>la ID DEL DOCUMETO ES: ${IDDOC}</a>
+
 <br>
 <% String id_documento = request.getParameter("id_documento");
 %>  
 <form action="FormularioVulnerabilidades" method="POST" style="background-color: lavender">
 
     <input type="hidden" name="id_documento" readonly="readonly" value="<%=id_documento%>" /><br/>
-    <input type="text" name="nombre_vulnerabilidad" value=""/>NOMBRE_VULNERABILIDAD *<br/>
-    <input type="text" name="url_servicio" value="" />URL_SERVICIO<br/>
+    <input type="text" name="nombre_vulnerabilidad" value=""/>NOMBRE VULNERABILIDAD *<br/>
+    <input type="text" name="url_servicio" value="" />URL SERVICIO<br/>
     <script language="javascript" type="text/javascript">
         function getData() {
             var textarea = document.getElementsByName("descripcion_vulnerabilidad");
@@ -64,28 +64,28 @@
     </script>
 
     <textarea  name="descripcion_vulnerabilidad" class="siva"></textarea>
-    <a href="javascript:getData()"></a>descripcion_vulnerabilidad *
+    <a href="javascript:getData()"></a>Descripcion Vulnerabilidad *
     <br> 
-    <input type="text" name="impacto_vulnerabilidad" value="" />impacto_vulnerabilidad<br/>
-    <input type="text" name="recomendaciones_vulnerabilidad" value="" />recomendaciones_vulnerabilidad<br/>
+    <input type="text" name="impacto_vulnerabilidad" value="" />Impacto de la  Vulnerabilidad<br/>
+    <input type="text" name="recomendaciones_vulnerabilidad" value="" />Recomendaciones<br/>
     <select name="id_estado_mitigacion">
         <option value="0"> No Mitigado</option>
         <option value="1"> Mitigado</option>
-    </select>
+    </select> Mitigacion
     <br>
-    <input type="text" name="fecha_mitigacion" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Enter a date in this format YYYY-MM-DD">fecha_mitigacion* (yyyy-mm-dd)<br>
+    <input type="text" name="fecha_mitigacion" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Enter a date in this format YYYY-MM-DD">Fecha Mitigacion* (yyyy-mm-dd)<br>
     <input type="text" name="cvss" value="" />cvss *<br/>
-    <input type="text" name="fecha_propuesta" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Enter a date in this format YYYY-MM-DD">fecha_propuesta* (yyyy-mm/-dd)<br>
-    <input type="text" name="pasos" value="" />pasos* <br/>
-    <input type="text" name="path_poc" value="" />path_poc* <br/>
-    <input type="text" name="num_incidente" value="" />num_incidente* <br>
+    <input type="text" name="fecha_propuesta" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Enter a date in this format YYYY-MM-DD">Fecha Propuesta* (yyyy-mm/-dd)<br>
+    <input type="text" name="pasos" value="" />Pasos* <br/>
+    <input type="text" name="path_poc" value="" />Path Poc* <br/>
+    <input type="text" name="num_incidente" value="" />Num Incidente* <br>
 
     <!-- cajitas combobox -->
 
 
 
-    <br>
-
+  
+    Seleccione Categoria:<br>
     <jsp:useBean id="id_categoria" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet rc = id_categoria.consultarListaCategoria(); %>
     <select name="id_categoria">
@@ -102,8 +102,8 @@
             }
         %>
 
-    </select>
-    <br>
+    </select><br>
+    Seleccione owasp_2017:<br>
     <jsp:useBean id="id_owasp_2017" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet rw = id_owasp_2017.consultarListaOwasp(); %>
     <select name="id_owasp_2017">
@@ -121,7 +121,7 @@
         %>
 
     </select>
-    <br>
+    <br>Seleccione Criticidad<br>
     <jsp:useBean id="id_criticidad" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet rcr = id_criticidad.consultarListaCriticidad(); %>
     <select name="id_criticidad">
@@ -141,12 +141,12 @@
     </select>
 
     <br>
-
+    Seleccione Tratamiento Riesgo<br>
     <jsp:useBean id="id_tratamiento_riesgo" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet rtr = id_tratamiento_riesgo.consultarListaTratamiento_riesgo(); %>
     <select name="id_tratamiento_riesgo">
         <option>
-            Seleccione tratamiento_riesgo </option> 
+            Seleccione tratamiento Riesgo </option> 
 
         <%
             while (rtr.next()) {
@@ -160,7 +160,7 @@
 
     </select>
     <br>
-
+     Seleccione CWE <br>
     <jsp:useBean id="id_cwe" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet rcwe = id_cwe.consultarListaCwe(); %>
     <select name="id_cwe">
@@ -178,7 +178,7 @@
         %>
 
     </select>
-    <br>
+    <br> Seleccione Aplicacion <br>
     <jsp:useBean id="id_aplicacion" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet ra = id_aplicacion.consultarListaAplicacion(); %>
     <select name="id_aplicacion">
@@ -197,7 +197,7 @@
 
     </select>
     <br>
-
+ Seleccione Empresa: <br>
     <jsp:useBean id="id_empresa" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet rem = id_empresa.consultarListaEmpresa(); %>
     <select name="id_empresa">
@@ -216,6 +216,7 @@
 
     </select>
     <br>
+    Seleccione Ambiente: <br>
     <jsp:useBean id="id_ambiente" scope="page" class="Dao.VulnerabilidadDao" />
     <% ResultSet ram = id_ambiente.consultarListaAmbiente(); %>
     <select name="id_ambiente">
@@ -245,7 +246,7 @@
 
 <!-- formuario busqueda de vulneravilidades en aplicaciones -->           
 <form action="mostrar" method="POST">
-    ID_Aplicacion <input type="text" name="id_aplicacion" value="" /><br/>
+    ID Aplicacion: <input type="number" name="id_aplicacion" value="" /><br/>
     <input type="hidden" name="id_documento" readonly="readonly" value="<%=id_documento%>" /><br/>
 
     <br>
@@ -253,7 +254,8 @@
     <center>
         <input type="submit" value="Buscar" name="mostrar" class="btn btn-primary"  role="button"/>
     </center>
-</form>
+</form><br>
+ <center><a href="menu.jsp"><button type="button" class="btn btn-secondary">Volver..</button></a></center>
 <!--//////////////////////////////////cerra session////////////////////////////////////////////////////////////-->    
 <form action="Logout" method="POST">
     <input type="submit" value="cerrar Sesion" name="??" class="btn btn-primary"  role="button"/>
@@ -262,7 +264,7 @@
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <section>
-    <input type="text" name="busqueda" id="txt1" onkeyup="showHint1(this.value)" placeholder="buscar...">
+    <input type="text" name="busqueda" id="txt1" onkeyup="showHint1(this.value)" placeholder="buscar aplicaciones">
 </section>
 
 <section id="txtHint">

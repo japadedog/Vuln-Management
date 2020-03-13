@@ -14,7 +14,7 @@
     <body>
         
          <form action="SMostarDoc" method="POST">
-            buscar por id del documento <input type="number" name="id_documento" value="" /><br/>
+            Buscar por ID del documento:<br>  <input type="number" name="id_documento" value="" /><br/>
            
             <br>
             <center>
@@ -23,8 +23,8 @@
         </form>
         Busqueda por Fechas
         <form action="SBuscarFechas" method="POST">
-            fecha inicio<input type="text" name="fecha_entrega1" value="" />
-            fecha fin<input type="text" name="fecha_entrega2" value="" />
+            Fecha Inicio: <input type="text" name="fecha_entrega1" value="" />
+            Fecha Fin: <input type="text" name="fecha_entrega2" value="" />
             <br>
             <center>
             <input type="submit" value="Buscar" name="mostrar" class="btn btn-primary"  role="button"/>
@@ -32,7 +32,7 @@
         </form>
         Busqueda por Nombre
         <form action="SBuscarNombre" method="POST">
-            NOMBRE DOCUMENTO<input type="text" name="nombre_documento" value="" />
+            NOMBRE DOCUMENTO: <input type="text" name="nombre_documento" value="" />
             <br>
             <center>
             <input type="submit" value="Buscar" name="mostrar" class="btn btn-primary"  role="button"/>
@@ -41,7 +41,7 @@
         <br>
         Buscar por Pentester
         <form action="SBuscarPorUsuario" method="POST">
-            NOMBRE PENTESTE<input type="text" name="nombre_usuario" value="" />
+            NOMBRE PENTESTE: <input type="text" name="nombre_usuario" value="" />
             <br>
             <center>
             <input type="submit" value="Buscar" name="mostrar" class="btn btn-primary"  role="button"/>

@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.jsp"> Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="menu.jsp"> Home <span class="sr-only">(current)</span></a>
                 </li>
             <li class="nav-item">
-                    <a class="nav-link" href="#">Panel Usuarios</a>
+                    <a class="nav-link" href="principal.jsp">Panel Usuarios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Panel Vulnerabilidades</a>
+                <a class="nav-link" href="FormularioDocumentacion.jsp">Panel Vulnerabilidades</a>
             </li>
 
         </div>
@@ -61,7 +61,7 @@
         <center><a class="btn btn-primary" href="principal.jsp" role="button">Administrar</a>
         <br>
         <br>
-        <a class="btn btn-primary" href="FormularioDocumentacion.jsp" role="button">Vulerabilidades</a>
+        <a class="btn btn-primary" href="FormularioDocumentacion.jsp" role="button">Documentación</a>
         <br> </center>
 
         <form action="Logout" method="POST">

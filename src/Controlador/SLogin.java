@@ -74,11 +74,11 @@ public class SLogin extends HttpServlet {
                 misession.setAttribute("usu",usuario);
                 misession.setAttribute("tipo",tipo);
                 
-                if(tipo.getId_tipo_usuario()== 1) {
+                if(tipo.getId_tipo_usuario()== 1 || tipo.getId_tipo_usuario()== 2) {
                 usuarioDao.update1(todayAsString, usuario);
                 RequestDispatcher dispar = request.getRequestDispatcher("menu.jsp");
                 dispar.forward(request, response);  
-                } else if(tipo.getId_tipo_usuario()== 2)
+                } else if(tipo.getId_tipo_usuario()== 3)	
                 {
                 usuarioDao.update1(todayAsString, usuario);
                 RequestDispatcher dispar = request.getRequestDispatcher("MenuUsuario.jsp");

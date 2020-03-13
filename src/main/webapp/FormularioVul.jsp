@@ -15,7 +15,7 @@
                 <img src="imagenes/actualizarusuarios.jpg">         
     </head>
    <body>
-    <center><h1>la ID DEL DOCUMETO ES: ${IDDOC}</h1></center>
+    <center><h1>Verifique Los Datos</h1></center>
     <%
          
             HttpSession session1 = request.getSession();

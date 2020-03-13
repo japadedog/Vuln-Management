@@ -14,7 +14,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Historial del usuario: ${nom}</h1>
+        <h1>Historial del usuario:</h1>
  
                 <table border="1">
 
@@ -22,24 +22,24 @@
                 <tr bgcolor="skyblue">
                     <th>ID del docuemnto</th>
                     <th>NOMBRE</th>
-                    <th>path documento</th>
-                    <th>version_documento</th>
+                    <th>Path Documento</th>
+                    <th>Version Documento</th>
                     <th>hash_md5</th>
                     <th>hash_sha1</th>
                     <th>hash_sha256</th>
-                    <th>documento_relacionado</th>
-                    <th>fecha_entrega</th>
-                    <th>nro_sprint </th>
-                    <th>nombre_sprint </th>
-                    <th>estado_documento </th>
-                    <th>alcance	 </th>
-                    <th>conclusion </th>
-                    <th>id_persona </th>
-                    <th>id_idea </th>
-                    <th>id_celula </th>
-                    <th>id_usuario</th>
-                    <th>id_origen </th>
-                    <th>id_revision </th>
+                    <th>Documento Relacionado</th>
+                    <th>Fecha Entrega</th>
+                    <th>Nro Sprint </th>
+                    <th>Nombre Sprint </th>
+                    <th>Estado Documento </th>
+                    <th>Alcance	 </th>
+                    <th>Conclusion </th>
+                    <th>Persona </th>
+                    <th>Proyecto </th>
+                    <th>Celula </th>
+                    <th>Usuario</th>
+                    <th>Origen </th>
+                    <th>Revision </th>
                     </tr>  
             <%        
             HttpSession session1 = request.getSession();
@@ -87,7 +87,7 @@
                     <th><%=rs.getString(18)%></th>
                     <th><%=rs.getString(19)%></th>
                     <th><%=rs.getString(20)%></th>  
-                    <th><a href="FormularioVulnerabilidades.jsp?id_documento=<%=rs.getString(1)%>"></a>retomar</th>
+                    <th><a href="FormularioVulnerabilidades.jsp?id_documento=<%=rs.getString(1)%>">Retomar</a></th>
                 </tr>                            
                       <%       
                         }
@@ -106,7 +106,7 @@
         </table>
         
             <br>
-                    <center><a href="menu.jsp"><button type="button" class="btn btn-secondary">Volver..</button></a></center>
+                   
  <!--//////////////////////////////////cerra session////////////////////////////////////////////////////////////-->    
          <form action="Logout" method="POST">
             <input type="submit" value="cerrar Sesion" name="??" class="btn btn-primary"  role="button"/>
